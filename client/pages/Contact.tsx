@@ -134,9 +134,9 @@ export default function Contact() {
             <div className="pt-4 border-t border-border">
               <p className="text-xs text-muted-foreground mb-4">Connect with me</p>
               <div className="flex items-center gap-4">
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">GitHub</a>
-                <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Twitter</a>
+                <a href="https://www.linkedin.com/in/oladimeji-hayatullahi-70413222b" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">LinkedIn</a>
+                <a href="https://github.com/hayatullahi67" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">GitHub</a>
+                <a href="https://x.com/olawale217820" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Twitter</a>
               </div>
             </div>
           </div>
