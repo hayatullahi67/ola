@@ -68,23 +68,20 @@ export default function Projects() {
           <p className="mt-4">Loading...</p>
         </motion.div>
       ) : projects && projects.length > 0 ? (
-        <motion.div
-          className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          {projects.map((p) => (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.map((p, idx) => (
             <motion.div
               key={p.id}
-              variants={itemVariants}
-              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, ease: "easeOut", delay: idx * 0.06 + 0.05 }}
+              whileHover={{ y: -8, transition: { duration: 0.25 } }}
               layout
             >
               <ProjectCard project={p} />
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       ) : (
         <motion.p
           className="text-center text-muted-foreground"
